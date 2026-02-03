@@ -9,8 +9,8 @@ layout: default
 
 <div class="card-layout">
 
-  <a href="{{ "/writing/" | relative_url }}">
-  <img src="{{ "/Images/writeCard.jpg" | relative_url }}" alt="writing">
+  <a href="{{ "/demons/" | relative_url }}">
+  <img src="{{ "/Images/ratgod.jpg" | relative_url }}" alt="demon test">
 </a>
 
   <a href="{{ "/making/" | relative_url }}">
