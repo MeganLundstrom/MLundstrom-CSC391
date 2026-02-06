@@ -1,0 +1,15 @@
+ /* Comment */
+ /* Background colors */
+
+body {
+  background-color: #303030;
+}
+
+ /* Allowing image rows */
+ .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 370px;
+  /*border: 3px solid green; */
+}
