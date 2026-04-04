@@ -5,6 +5,7 @@
   <title>A-Frame</title>
   <body>
     <a-scene>
+      <!-- windmill -->
       <!-- windmill body -->
       <a-cylinder position="0 2 -7" height="4" radius="2" color="#EF2D5E"></a-cylinder>
       <!--windmill top-->
@@ -15,28 +16,45 @@
       <a-box position="0 3.75 -4.9" width="0.25" height="0.25" depth="0.25" color="#FFFFFF">
 
         <!--wind arm 1 -->
-        <a-box position="0 0 0" width="0.1" height="5" depth="0.1" color="#fefefe">
+        <a-box position="0 0 0" width="0.1" height="5" depth="0.1" color="#F0F0F0">
           <!--wind arm extensions-->
-          <a-box position="-0.35 1.37 0" width="1" height="2.25" depth="0.1" color="#FFFFFF"></a-box>
-          <a-box position="0.35 -1.37 0" width="1" height="2.25" depth="0.1" color="#FFFFFF"></a-box>
+          <a-box position="-0.35 1.37 0" width="1" height="2.25" depth="0.08" color="#FFFFFF"></a-box>
+          <a-box position="0.35 -1.37 0" width="1" height="2.25" depth="0.08" color="#FFFFFF"></a-box>
         </a-box>
 
         <!--wind arm 2-->
-        <a-box position="0 0 0" rotation="0 0 90" width="0.1" height="5" depth="0.1" color="#FFFFFF">
+        <a-box position="0 0 0" rotation="0 0 90" width="0.1" height="5" depth="0.1" color="#F0F0F0">
           <!--wind arm extensions-->
-          <a-box position="-0.35 1.37 0" rotation="0 0 0" width="1" height="2.25" depth="0.1" color="#FFFFFF"></a-box>
-          <a-box position="0.35 -1.37 0" rotation="0 0 0" width="1" height="2.25" depth="0.1" color="#FFFFFF"></a-box>
+          <a-box position="-0.35 1.37 0" rotation="0 0 0" width="1" height="2.25" depth="0.08" color="#FFFFFF"></a-box>
+          <a-box position="0.35 -1.37 0" rotation="0 0 0" width="1" height="2.25" depth="0.08" color="#FFFFFF"></a-box>
 
         </a-box>
-
-
       </a-box>
 
+      <!-- sheep -->
+      <!-- body -->
+      <a-icosahedron position="3 0.75 -5" radius="0.75" color="#FFFFFF"></a-icosahedron>
+      <!-- front legs -->
+      <a-cylinder position="2.55 0 -5" radius="0.1" height="1" color="#262626"></a-cylinder>
+      <a-cylinder position="3 0 -4.75" radius="0.1" height="1" color="#262626"></a-cylinder>
+      <!--back legs-->
+      <a-cylinder position="3.45 0 -5" radius="0.1" height="1" color="#262626"></a-cylinder>
+      <a-cylinder position="3 0 -5.5" radius="0.1" height="1" color="#262626"></a-cylinder>
+      <!--head-->
+      <a-sphere position="2.55 0.9 -4.5" radius="0.25" color="#262626"></a-sphere>
 
 
 
-      <!-- ocean -->
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="50" height="10" color="#0077be"></a-plane>
+
+
+
+
+
+
+
+
+      <!-- ground -->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="50" height="50" color="#6EA145"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
   </body>
