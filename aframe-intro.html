@@ -5,8 +5,34 @@
   <title>A-Frame</title>
   <body>
     <a-scene>
-      <!-- island -->
-      <a-sphere position="0 -0.5 -5" radius="1.5" color="#EF2D5E"></a-sphere>
+      <!-- windmill body -->
+      <a-cylinder position="0 2 -7" height="4" radius="2" color="#EF2D5E"></a-cylinder>
+      <!--windmill top-->
+      <a-sphere position="0 4 -7"  radius="2" color="#EF2D5E"></a-sphere>
+
+      <!--windmill center/spin mechanism-->
+      <!--add ((animation="property: rotation; to: 0 0 -360 ; loop: true; dur: 2000; easing: linear")) to first box-->
+      <a-box position="0 3.75 -4.9" width="0.25" height="0.25" depth="0.25" color="#FFFFFF">
+
+        <!--wind arm 1 -->
+        <a-box position="0 0 0" width="0.1" height="5" depth="0.1" color="#fefefe">
+          <!--wind arm extensions-->
+          <a-box position="-0.35 1.37 0" width="1" height="2.25" depth="0.1" color="#FFFFFF"></a-box>
+          <a-box position="0.35 -1.37 0" width="1" height="2.25" depth="0.1" color="#FFFFFF"></a-box>
+        </a-box>
+
+        <!--wind arm 2-->
+        <a-box position="0 0 0" rotation="0 0 90" width="0.1" height="5" depth="0.1" color="#FFFFFF">
+          <!--wind arm extensions-->
+          <a-box position="-0.35 1.37 0" rotation="0 0 0" width="1" height="2.25" depth="0.1" color="#FFFFFF"></a-box>
+          <a-box position="0.35 -1.37 0" rotation="0 0 0" width="1" height="2.25" depth="0.1" color="#FFFFFF"></a-box>
+
+        </a-box>
+
+
+      </a-box>
+
+
 
 
       <!-- ocean -->
