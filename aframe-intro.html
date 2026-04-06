@@ -13,7 +13,7 @@
 
       <!--windmill center/spin mechanism-->
       <!--add ((animation="property: rotation; to: 0 0 -360 ; loop: true; dur: 2000; easing: linear")) to first box-->
-      <a-box position="0 3.75 -4.9" width="0.25" height="0.25" depth="0.25" color="#FFFFFF">
+      <a-box position="0 3.75 -4.9" width="0.25" height="0.25" depth="0.25" color="#FFFFFF" animation="property: rotation; to: 0 0 -360 ; loop: true; dur: 2000; easing: linear">
 
         <!--wind arm 1 -->
         <a-box position="0 0 0" width="0.1" height="5" depth="0.1" color="#F0F0F0">
@@ -31,26 +31,73 @@
         </a-box>
       </a-box>
 
-      <!-- sheep -->
-      <!-- sheep body -->
-      <a-icosahedron position="3 0.75 -5" radius="0.75" color="#FFFFFF">
+      <!--hay-->
+      <a-cylinder position="-8 0.75 -7" height="2" radius="1" rotation="90 -50 0" color="#E3D36F"></a-cylinder>
 
+      <a-cylinder position="6 0.25 7" height="2" radius="1" rotation="90 -50 0" color="#E3D36F"></a-cylinder>
+      <a-cylinder position="8 0.75 7" height="2" radius="1" color="#E3D36F"></a-cylinder>
+
+      <a-cylinder position="-8 0.75 8" height="2" radius="1" rotation="90 50 0" color="#E3D36F"></a-cylinder>
+
+      <!-- sheep -->
+      <!-- sheep 1 -->
+      <a-icosahedron position="3 0.75 -5" radius="0.75" color="#FFFFFF">
+        <!--child legs-->
         <a-cylinder position="-0.1 -0.5 0.45" radius="0.1" height="1" color="#262626"></a-cylinder>
         <a-cylinder position="-0.45 -0.5 0" radius="0.1" height="1" color="#262626"></a-cylinder>
 
-        <a-cylinder position="0.1 -0.5 -0.5" radius="0.1" height="1" color="#262626"></a-cylinder>
+        <a-cylinder position="0.1 -0.5 -0.45" radius="0.1" height="1" color="#262626"></a-cylinder> <!--problem leg-->
         <a-cylinder position="0.35 -0.5 0" radius="0.1" height="1" color="#262626"></a-cylinder>
-
+        <!--child head-->
+        <a-sphere position="-0.35 0.25 0.45" radius="0.25" color="#262626"></a-sphere>
       </a-icosahedron>
-      <!-- legs old vers
+
+      <!-- sheep 2 -->
+      <a-icosahedron position="5 0.75 -4" rotation="0 -40 0" radius="0.75" color="#FFFFFF">
+        <!--child legs-->
+        <a-cylinder position="-0.1 -0.5 0.45" radius="0.1" height="1" color="#262626"></a-cylinder>
+        <a-cylinder position="-0.45 -0.5 0" radius="0.1" height="1" color="#262626"></a-cylinder>
+        
+        <a-cylinder position="0.1 -0.5 -0.45" radius="0.1" height="1" color="#262626"></a-cylinder> <!--problem leg-->
+        <a-cylinder position="0.35 -0.5 0" radius="0.1" height="1" color="#262626"></a-cylinder>
+        <!--child head-->
+        <a-sphere position="-0.35 0.25 0.45" radius="0.25" color="#262626"></a-sphere>
+      </a-icosahedron>
+
+      <!-- sheep eating -->
+      <a-icosahedron position="-6 0.75 -6" rotation="0 -70 0" radius="0.75" color="#FFFFFF">
+        <!--child legs-->
+        <a-cylinder position="-0.1 -0.5 0.45" radius="0.1" height="1" color="#262626"></a-cylinder>
+        <a-cylinder position="-0.45 -0.5 0" radius="0.1" height="1" color="#262626"></a-cylinder>
+        
+        <a-cylinder position="0.1 -0.5 -0.45" radius="0.1" height="1" color="#262626"></a-cylinder> <!--problem leg-->
+        <a-cylinder position="0.35 -0.5 0" radius="0.1" height="1" color="#262626"></a-cylinder>
+        <!--child head-->
+        <a-sphere position="-0.35 0.25 0.45" radius="0.25" color="#262626"></a-sphere>
+      </a-icosahedron>
+
+      <!-- sheep behind -->
+      <a-icosahedron position="0 0.75 5" radius="0.75" rotation="0 225 0" color="#FFFFFF">
+        <!--child legs-->
+        <a-cylinder position="-0.1 -0.5 0.45" radius="0.1" height="1" color="#262626"></a-cylinder>
+        <a-cylinder position="-0.45 -0.5 0" radius="0.1" height="1" color="#262626"></a-cylinder>
+
+        <a-cylinder position="0.1 -0.5 -0.45" radius="0.1" height="1" color="#262626"></a-cylinder> <!--problem leg-->
+        <a-cylinder position="0.35 -0.5 0" radius="0.1" height="1" color="#262626"></a-cylinder>
+        <!--child head-->
+        <a-sphere position="-0.5 0.25 0.45" radius="0.25" color="#262626"></a-sphere>
+      </a-icosahedron>
+
+      
+      <!-- OLD sheep legs & head
       <a-cylinder position="2.55 0 -5" radius="0.1" height="1" color="#262626"></a-cylinder>
       <a-cylinder position="3 0 -4.75" radius="0.1" height="1" color="#262626"></a-cylinder>
 
       <a-cylinder position="3.45 0 -5" radius="0.1" height="1" color="#262626"></a-cylinder>
       <a-cylinder position="3 0 -5.5" radius="0.1" height="1" color="#262626"></a-cylinder>
-      -->
-      <!-- sheep head-->
+
       <a-sphere position="2.55 0.9 -4.5" radius="0.25" color="#262626"></a-sphere>
+      -->
 
 
       <!--fence posts-->
