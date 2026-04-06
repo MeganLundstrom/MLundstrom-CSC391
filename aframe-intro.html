@@ -7,9 +7,9 @@
     <a-scene>
       <!-- windmill -->
       <!-- windmill body -->
-      <a-cylinder position="0 2 -7" height="4" radius="2" color="#EF2D5E"></a-cylinder>
+      <a-cylinder position="0 2 -7" height="4" radius="2" color="#C7714C"></a-cylinder>
       <!--windmill top-->
-      <a-sphere position="0 4 -7"  radius="2" color="#EF2D5E"></a-sphere>
+      <a-sphere position="0 4 -7"  radius="2" color="#C7714C"></a-sphere>
 
       <!--windmill center/spin mechanism-->
       <!--add ((animation="property: rotation; to: 0 0 -360 ; loop: true; dur: 2000; easing: linear")) to first box-->
@@ -32,16 +32,79 @@
       </a-box>
 
       <!-- sheep -->
-      <!-- body -->
-      <a-icosahedron position="3 0.75 -5" radius="0.75" color="#FFFFFF"></a-icosahedron>
-      <!-- front legs -->
+      <!-- sheep body -->
+      <a-icosahedron position="3 0.75 -5" radius="0.75" color="#FFFFFF">
+
+        <a-cylinder position="-0.1 -0.5 0.45" radius="0.1" height="1" color="#262626"></a-cylinder>
+        <a-cylinder position="-0.45 -0.5 0" radius="0.1" height="1" color="#262626"></a-cylinder>
+
+        <a-cylinder position="0.1 -0.5 -0.5" radius="0.1" height="1" color="#262626"></a-cylinder>
+        <a-cylinder position="0.35 -0.5 0" radius="0.1" height="1" color="#262626"></a-cylinder>
+
+      </a-icosahedron>
+      <!-- legs old vers
       <a-cylinder position="2.55 0 -5" radius="0.1" height="1" color="#262626"></a-cylinder>
       <a-cylinder position="3 0 -4.75" radius="0.1" height="1" color="#262626"></a-cylinder>
-      <!--back legs-->
+
       <a-cylinder position="3.45 0 -5" radius="0.1" height="1" color="#262626"></a-cylinder>
       <a-cylinder position="3 0 -5.5" radius="0.1" height="1" color="#262626"></a-cylinder>
-      <!--head-->
+      -->
+      <!-- sheep head-->
       <a-sphere position="2.55 0.9 -4.5" radius="0.25" color="#262626"></a-sphere>
+
+
+      <!--fence posts-->
+      <!--in front of camera-->
+      <a-box position="-10 0 -10" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="-5 0 -10" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="0 0 -10" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="5 0 -10" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="10 0 -10" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+        <!-- connections -->
+      <a-box position="0 0.5 -10" width="20" height="0.2" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="0 1.125 -10" width="20" height="0.2" depth="0.2" color="#F0F0F0"></a-box> 
+      <a-box position="0 1.75 -10" width="20" height="0.2" depth="0.2" color="#F0F0F0"></a-box>
+
+
+      <!--sides -->
+      <!--Right-->
+      <a-box position="10 0 -5" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>     
+      <a-box position="10 0 0" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="10 0 5" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>  
+      <!-- connections -->
+      <a-box position="10 0.5 0" rotation="0 90 0" width="20" height="0.2" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="10 1.125 0" rotation="0 90 0" width="20" height="0.2" depth="0.2" color="#F0F0F0"></a-box> 
+      <a-box position="10 1.75 0" rotation="0 90 0" width="20" height="0.2" depth="0.2" color="#F0F0F0"></a-box> 
+       
+      <!--Left-->
+      <a-box position="-10 0 -5" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>     
+      <a-box position="-10 0 0" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="-10 0 5" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+      <!-- connections -->
+      <a-box position="-10 0.5 0" rotation="0 90 0" width="20" height="0.2" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="-10 1.125 0" rotation="0 90 0" width="20" height="0.2" depth="0.2" color="#F0F0F0"></a-box> 
+      <a-box position="-10 1.75 0" rotation="0 90 0" width="20" height="0.2" depth="0.2" color="#F0F0F0"></a-box> 
+
+
+      <!--behind of camera-->
+      <a-box position="-10 0 10" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="-5 0 10" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="0 0 10" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="5 0 10" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="10 0 10" width="0.2" height="4" depth="0.2" color="#F0F0F0"></a-box>
+          <!-- connections -->
+      <a-box position="0 0.5 10" width="20" height="0.2" depth="0.2" color="#F0F0F0"></a-box>
+      <a-box position="0 1.125 10" width="20" height="0.2" depth="0.2" color="#F0F0F0"></a-box> 
+      <a-box position="0 1.75 10" width="20" height="0.2" depth="0.2" color="#F0F0F0"></a-box>
+
+         
+      
+
+
+
+
+
+      <!-- possibly parent legs to the sheep body instead for easier positioning. add fencing. dont forget to recolor the windmill & readd anim -->
 
 
 
@@ -55,7 +118,7 @@
 
       <!-- ground -->
       <a-plane position="0 0 -4" rotation="-90 0 0" width="50" height="50" color="#6EA145"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-sky color="#8CB9D1"></a-sky>
     </a-scene>
   </body>
 </html>
